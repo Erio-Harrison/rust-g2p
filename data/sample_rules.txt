@@ -1,0 +1,34 @@
+// 英语发音规则文件示例
+// 格式：pattern [left_context] [right_context] -> phonemes
+
+.group a
+a          AE0
+a    _     AH0     // 词尾的a读作schwa
+ar         AA0 R   // ar组合
+ay         EY1     // ay双元音
+
+.group b  
+b          B
+bb         B       // 双字母b
+
+.group c
+c          K       // 默认读k
+ch         CH      // ch组合
+ck    _    K       // 词尾ck读k
+c    ei    S       // ce, ci读s
+c    e     S
+c    i     S
+
+.group e
+e          EH0
+e     _            // 词尾e通常不发音
+ee         IY1     // ee长元音
+er         ER0     // er组合
+
+.group o
+o          OW0
+oo         UW1     // oo长元音
+ou         AW1     // ou双元音
+
+.group th
+th         TH      // th组合
